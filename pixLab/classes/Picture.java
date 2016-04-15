@@ -388,6 +388,19 @@ public void copy(Picture fromPic,
     this.mirrorVertical();
     this.write("collage.jpg");
   }
+    public void myCollage()
+  {
+    Picture flower1 = new Picture("flower1.jpg");
+    Picture beach = new Picture("beach.jpg");
+    Picture snowman = new Picture("snowman.jpg");
+    this.copy(flower1,0,0);
+    this.copy(flower1,200,0);
+    this.copy(beach,300,0);
+    this.copy(snowman,400,0);
+    this.mirrorVertical();
+    this.write("collage.jpg");
+  }
+    
   
   
   /** Method to show large changes in color 

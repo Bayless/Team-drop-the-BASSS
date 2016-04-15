@@ -115,10 +115,10 @@ public class PictureTester
     canvas.explore();
     }	
   /** Method to test the collage method */
-  public static void testCollage()
+  public static void testMyCollage()
   {
     Picture canvas = new Picture("640x480.jpg");
-    canvas.createCollage();
+    canvas.myCollage();
     canvas.explore();
   }
   
@@ -151,7 +151,8 @@ public class PictureTester
       //testMirrorHorizontalBotToTop();//success
       // testMirrorDiagonal();//success
       // testMirrorGull();//success with a bit of head cut off
-      testCopy();
+      //testCopy();
+      testMyCollage();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
