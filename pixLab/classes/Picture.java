@@ -355,13 +355,13 @@ public void copy(Picture fromPic,
 	Pixel toPixel = null;
 	Pixel[][] toPixels = this.getPixels2D();
 	Pixel[][] fromPixels = fromPic.getPixels2D();
-	for (int fromRow = endRow, toRow = startRow; 
-	     fromRow < fromPixels.length &&
+	for (int fromRow = 0, toRow = startRow; 
+	     fromRow < endRow &&
 		 toRow < toPixels.length; 
 	     fromRow++, toRow++)
 	    {
-		for (int fromCol = endCol, toCol = startCol; 
-		     fromCol < fromPixels[0].length &&
+		for (int fromCol = 0, toCol = startCol; 
+		     fromCol < endCol &&
 			 toCol < toPixels[0].length;  
 		     fromCol++, toCol++)
 		    {

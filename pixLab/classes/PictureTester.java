@@ -111,7 +111,8 @@ public class PictureTester
     public static void testCopy(){
   Picture canvas = new Picture("beach.jpg");
       canvas.explore();
-      canvas.copy(canvas,4,123,4,123);
+      // canvas.copy(canvas,0,0,250,250);
+      canvas.copy(canvas,4,123);
     canvas.explore();
     }	
   /** Method to test the collage method */
@@ -151,8 +152,8 @@ public class PictureTester
       //testMirrorHorizontalBotToTop();//success
       // testMirrorDiagonal();//success
       // testMirrorGull();//success with a bit of head cut off
-      //testCopy();
-      testMyCollage();
+      testCopy();
+      // testMyCollage();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
