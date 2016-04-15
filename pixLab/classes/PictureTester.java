@@ -108,7 +108,12 @@ public class PictureTester
     temple.mirrorGull();
     temple.explore();
   }
-  
+    public static void testCopy(){
+  Picture canvas = new Picture("beach.jpg");
+      canvas.explore();
+      canvas.copy(canvas,4,123,4,123);
+    canvas.explore();
+    }	
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -146,6 +151,7 @@ public class PictureTester
       //testMirrorHorizontalBotToTop();//success
       // testMirrorDiagonal();//success
       // testMirrorGull();//success with a bit of head cut off
+      testCopy();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
